@@ -1,0 +1,7 @@
+---
+title: "Sites"
+listing:
+  contents: ingersoll-lockwood.qmd
+  feed: true
+order: 1
+---

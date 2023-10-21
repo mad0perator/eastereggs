@@ -1,7 +1,57 @@
 project:
-  title: "eastereggs"
+  type: website
+  title: eastereggs
+  resources: static
 
-execute: 
+website:
+  title: "Easter Eggs"
+  site-url: "https://mad0perator.github.com"
+  site-path: "/eastereggs"
+  repo-url: "https://github.com/mad0perator/eastereggs"
+  repo-branch: master
+  repo-actions:
+    - edit
+    - source
+    - issue
+  page-navigation: true
+  back-to-top-navigation: true
+  navbar:
+    right:
+      - icon: github
+        href: https://github.com/mad0perator/eastereggs
+        aria-label: GitHub
+      - icon: twitter
+        href: https://twitter.com/null_space
+        aria-label: Twitter (X)
+    left:
+      - href: index.qmd
+        text: Home
+      - href: ingersoll-lockwood.qmd
+        text: Ingersoll Lockwood
+      - about.qmd
+  open-graph: true
+  twitter-card:
+    site: "@null_space"
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    anchor-sections: true
+    smooth-scroll: true
+    section-divs: true
+    toc: true
+    #page-layout: full
+    code-fold: true
+    #code-tool: toggle
+    link-external-newwindow: true
+    notebook-links: true
+    #notebook-view: true
+
+execute:
   freeze: auto
+
 
 

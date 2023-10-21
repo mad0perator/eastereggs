@@ -1,0 +1,11 @@
+---
+title: "About"
+#template: solana
+---
+
+This site is a demonstration on making [Quarto][q] documents in a [JupyterLab][jl] environment. Websites are examined for easter egg content and the Quarto publishing system integrates with [GitHub Pages][ghp] to produce documents and websites in various formats.
+
+
+[q]: https://quarto.org "Quarto | Home"
+[jl]: https://jupyter.org "Jupyter Project | Home"
+[ghp]: https://github.com "GitHub Pages | Home"
