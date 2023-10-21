@@ -5,8 +5,7 @@ project:
 
 website:
   title: "Easter Eggs"
-  site-url: "https://mad0perator.github.com"
-  site-path: "/eastereggs"
+  site-url: "https://mad0perator.github.com/eastereggs"
   repo-url: "https://github.com/mad0perator/eastereggs"
   repo-branch: master
   repo-actions:
