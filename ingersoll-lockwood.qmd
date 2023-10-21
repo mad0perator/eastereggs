@@ -132,21 +132,21 @@ Internal
 
 ### His Only Son video
 
-{{< video static/hisonlyson-i-l-2023.mp4 >}}
+Need to upload
 
 ### US Space Force video
 
 numbers
 : 04-10-20-45-47-17-17
 
-{{< video https://www.youtube.com/embed/1uAu-DKwN0s?si=U5jP1sgr15mKoWWz >}}
+Need to upload video
 
 ### Peace Through Strength video
 
 numbers
 : 45-17-47-4-10-20-24-7-15
 
-{{< video static/Peace-Through-Strength-45-17-47-4-10-20-24-7-15.mp4 >}}
+{{< video https://www.youtube.com/embed/1uAu-DKwN0s?si=U5jP1sgr15mKoWWz >}}
 
 ### Tic Toc Gym Time Over image
 
