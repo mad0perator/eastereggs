@@ -41,7 +41,7 @@ import requests
 from pathlib import Path
 from IPython.display import display, HTML, Video, YouTubeVideo
 from bs4 import BeautifulSoup
-from rich import print
+#from rich import print
 
 
 #| label: f01
