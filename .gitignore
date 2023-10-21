@@ -3,6 +3,7 @@
 # git ignores paths matching these glob patterns
 #
 
+
 ## user-defined
 #
 # mamba project environment
@@ -12,6 +13,9 @@ env/
 .ipynb_checkpoints/
 # vscode
 extensions.json
+# quarto
+_site/
+.quarto/
 
 
 # auto-generated
