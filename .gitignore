@@ -16,6 +16,9 @@ extensions.json
 # quarto
 _site/
 .quarto/
+*_files/
+# static files
+static/
 
 
 # auto-generated

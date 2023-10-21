@@ -1,5 +1,7 @@
 project:
   title: "eastereggs"
 
+execute: 
+  freeze: auto
 
 
