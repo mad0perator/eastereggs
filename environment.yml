@@ -1,0 +1,7 @@
+name: eastereggs
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - pip
+  - jupyterlab
