@@ -41,7 +41,7 @@
 <li>Extract all the links.</li>
 <li>Separate the external links from the internal ones.</li>
 </ol>
-<div id="e2fb91fb" class="cell" data-execution_count="1">
+<div id="e0a91083" class="cell" data-execution_count="1">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
