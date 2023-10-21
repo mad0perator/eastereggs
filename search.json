@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This site is a demonstration on making Quarto documents in a JupyterLab environment. Websites are examined for easter egg content and the Quarto publishing system integrates with GitHub Pages to produce documents and websites in various formats.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "ingersoll-lockwood.html",
+    "href": "ingersoll-lockwood.html",
+    "title": "Ingersoll Lockwood",
+    "section": "",
+    "text": "A brief examination of the Ingersoll Lockwood website for easter eggs."
+  },
+  {
+    "objectID": "ingersoll-lockwood.html#sources",
+    "href": "ingersoll-lockwood.html#sources",
+    "title": "Ingersoll Lockwood",
+    "section": "Sources",
+    "text": "Sources\n\npost by @BrainStorm_Joe on X (formerly Twitter)\nIngersoll Lockwood website\n\nScreen capture of the site:\n\nFor this examination we’re going to sift through the HTML markup code which is what your browser interprets to display webpages. No analysis or conjectures will be provided here, our objective is specific:\nGather information that may be useful."
+  },
+  {
+    "objectID": "ingersoll-lockwood.html#method",
+    "href": "ingersoll-lockwood.html#method",
+    "title": "Ingersoll Lockwood",
+    "section": "Method",
+    "text": "Method\n\nTrash the less interesting stuff.\nExtract all the links.\nSeparate the external links from the internal ones.\n\n\n\nCode\n# imports\nimport requests\nfrom pathlib import Path\nfrom IPython.display import display, HTML, Video, YouTubeVideo\nfrom bs4 import BeautifulSoup\n#from rich import print\n\n\n#| label: f01\ndef get_links() -&gt; list[str]:\n    \"\"\"Return a list of all the URLs on the homepage.\"\"\"\n    urls = []\n    path = Path('static/index.html')\n    markup = path.read_text()\n    soup = BeautifulSoup(markup, 'lxml')\n    for tag in soup.find_all('a'):\n        if tag.has_attr('href'):\n            urls.append(tag['href'])\n    return urls\n\n#| label: f02\ndef get_relative_paths() -&gt; list[str]:\n    \"\"\"Return a list of relative paths.\"\"\"\n    relpaths = []\n    for link in get_links():\n        if link.startswith(site) and link != site:\n            relpaths.append(link.removeprefix(site))\n    return relpaths\n\n#| label: f03\ndef get_external_links() -&gt; list[str]:\n    \"\"\"Return a list of external links.\"\"\"\n    links = get_links()\n    return list(link for link in get_links() if site not in link)\n\n#| label: f04\ndef get_media_filenames():\n    \"\"\"List the names of media files.\"\"\"\n    names = []\n    for path in get_relative_paths():\n        if path.startswith('wp-content'):\n            names.append(Path(path).name)\n    return names\n\n\n# homepage was manually saved due to site's no bot policy.\nsite = 'https://www.ingersolllockwood.com/'\npath = Path('static/index.html')\nmarkup = path.read_text()\nsoup = BeautifulSoup(markup, 'lxml')\nsoup.head.decompose()\n\nrelpaths = get_relative_paths()\nextlinks = get_external_links()\nfilenames = get_media_filenames()"
+  },
+  {
+    "objectID": "ingersoll-lockwood.html#links",
+    "href": "ingersoll-lockwood.html#links",
+    "title": "Ingersoll Lockwood",
+    "section": "Links",
+    "text": "Links\n\nCythereal: Malware prevention\nXCOS Corp: Quantum-resistant encryption (interesting logo)\nLindell Event: Mike Lindell\nSpace Force Application: Apply for SpaceForce\nFBI Application: Sealing a certain Florida search warrant… (millions of docs there)\nGoogle Sheets: Secret courts spreadsheet\nAngel Funding: Fund Sound of Freedom Film\nGen. Flynn Store: The Citizens Guide to Fifth Generation Warfare autographed book\nEureka Alert: Scientists demonstrate time reflection of electromagnetic waves in a groundbreaking experiment\nTrump White House Archives: The Abraham Accords Declaration\nIn-Q-Tel: Maritime gadgets\nSmall Business Administration\nSBIR: America’s Seed Fund (from SBA)\nDARPA: Defense Advanced Research Projects Agency (Military)\nDHS: Department of Homeland Security\nNASA/OSBP: NASA Office of Small Business Programs\nNSA: National Security Administration\nSpace Force: Space Force (Military)\nODNI UAP Annual Report: Office of Director of National Intelligence - 2022 Annual Report on Unidentified Aerial Phenomena\nAARO: All-domain Anomaly Resolution Office (Military)\nBibliotecapleyades: German Disc Aircrafts\nGoogle Earth: A hole in Antartica\nExecutive Order 13848: Imposing Certain Sanctions in the Event of Foreign Interference in a United States Election\nNAVAIR: Navy FOIA Documents (Military) :eyes:\nDoJ: Durham Report\nState Department: The Abraham Accords\nCion Systems: Next Generation Enterprise Identity Management\n\n\nInternal\n\nReading Library is worth checking out."
+  },
+  {
+    "objectID": "ingersoll-lockwood.html#media",
+    "href": "ingersoll-lockwood.html#media",
+    "title": "Ingersoll Lockwood",
+    "section": "Media",
+    "text": "Media\n\nHis Only Son video\nNeed to upload\n\n\nUS Space Force video\n\nnumbers\n\n04-10-20-45-47-17-17\n\n\nNeed to upload video\n\n\nPeace Through Strength video\n\nnumbers\n\n45-17-47-4-10-20-24-7-15\n\n\n\n\n\nTic Toc Gym Time Over image\n\nnumbers\n\n45-47-04-10-20-1717\n\n\n\n\n\nImage\n\n\n\n\nBeyond the Reset animated short film"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Sites",
+    "section": "",
+    "text": "Ingersoll Lockwood\n\n\n\n\n\n\n\n\n\n\n\nOct 20, 2023\n\n\nmad0perator\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+  }
+]
